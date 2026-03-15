@@ -1,0 +1,334 @@
+/* --- 1. Cấu hình chung & Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --gold: #c59d5f;
+    --dark: #111111;
+    --gray: #1a1a1a;
+    --text-muted: #888;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .h1, .h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- 2. Header & Hero Section --- */
+.bg-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('image/01.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+}
+
+#home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15%;
+}
+
+.b-two {
+    color: var(--gold);
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+}
+
+/* --- 3. Navbar Custom --- */
+.navbar {
+    padding: 20px 0;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+/* --- 4. About Section --- */
+.ab-bg {
+    background: #fff;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about > div {
+    flex: 1;
+}
+
+.a-two {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.image-one {
+    border: 15px solid #f8f9fa;
+    width: 100%;
+}
+
+/* --- 5. Services Section --- */
+.m-bg {
+    background-color: var(--dark);
+    color: #fff;
+}
+
+.flex--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-one {
+    background: var(--gray);
+    width: 350px;
+    border: 1px solid #333;
+    transition: 0.4s;
+}
+
+.card-one:hover {
+    border-color: var(--gold);
+}
+
+.card-one img {
+    width: 100%;
+}
+
+.s-three {
+    color: var(--gold);
+}
+
+/* --- 6. Special Menu Section --- */
+.bg-color-one {
+    background-color: #fff;
+}
+
+#menu {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu-one {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.menu-one img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.menu-one .content {
+    flex-grow: 1;
+}
+
+.menu-one .title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #ccc;
+    margin-bottom: 5px;
+}
+
+.menu-one .title span:last-child {
+    color: var(--gold);
+    font-weight: bold;
+}
+
+/* --- 7. Opening Hours (Parallax effect) --- */
+.t-color {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                url('image/09.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+.t-two {
+    color: var(--gold);
+}
+
+/* --- 8. Gallery Section --- */
+.ga-bg .g-3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.g-two img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.g-two:hover img {
+    transform: scale(1.05);
+    filter: brightness(70%);
+}
+
+/* --- 9. Blog Section --- */
+.bn-image {
+    background: #111;
+    color: #fff;
+}
+
+#blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bn-two {
+    background: var(--gray);
+    border: 1px solid #222;
+}
+
+.bn-color {
+    color: var(--gold);
+}
+
+.bn-three {
+    background: var(--gold);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* --- 10. Reviews Section --- */
+.r-bg {
+    background: #fdfdfd;
+}
+
+.borderr {
+    border-radius: 0;
+    border: none;
+    margin: 20px;
+    display: inline-block;
+    width: 30%;
+}
+
+.imagee {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: -40px auto 0;
+    border: 5px solid #fff;
+}
+
+.fa-star {
+    color: var(--gold);
+    font-size: 12px;
+}
+
+/* --- 11. Chefs Section --- */
+.chefs-bg {
+    background: var(--dark);
+}
+
+.chefs-bg .g-0 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.c-two {
+    flex: 1;
+    background: var(--gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.c-image {
+    flex: 1;
+}
+
+.c-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c-three {
+    color: var(--gold);
+}
+
+/* --- 12. Contact & Footer --- */
+.con-bg {
+    background: #f8f9fa;
+}
+
+.button-one {
+    background: var(--gold);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+}
+
+.ft-imgg {
+    background: var(--dark);
+    color: #fff;
+}
+
+.f-one {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+}
+
+.end-bg {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.en-three a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.en-three a:hover {
+    color: var(--gold);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+    #about, .chefs-bg .g-0 {
+        flex-direction: column;
+    }
+    .borderr, .f-one {
+        width: 100%;
+    }
+    .ga-bg .g-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
