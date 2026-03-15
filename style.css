@@ -1,4 +1,3 @@
-/* --- 1. Cấu hình chung & Font --- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
@@ -18,7 +17,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     font-family: 'Playfair Display', serif;
 }
 
-/* --- 2. Header & Hero Section --- */
 .bg-image {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
                 url('image/01.jpg') no-repeat center center/cover;
@@ -40,7 +38,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     font-size: 1.2rem;
 }
 
-/* --- 3. Navbar Custom --- */
 .navbar {
     padding: 20px 0;
 }
@@ -56,7 +53,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     color: var(--gold) !important;
 }
 
-/* --- 4. About Section --- */
 .ab-bg {
     background: #fff;
 }
@@ -85,7 +81,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     width: 100%;
 }
 
-/* --- 5. Services Section --- */
 .m-bg {
     background-color: var(--dark);
     color: #fff;
@@ -118,7 +113,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     color: var(--gold);
 }
 
-/* --- 6. Special Menu Section --- */
 .bg-color-one {
     background-color: #fff;
 }
@@ -159,7 +153,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     font-weight: bold;
 }
 
-/* --- 7. Opening Hours (Parallax effect) --- */
 .t-color {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
                 url('image/09.jpg') no-repeat center center/cover;
@@ -170,7 +163,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     color: var(--gold);
 }
 
-/* --- 8. Gallery Section --- */
 .ga-bg .g-3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -219,7 +211,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     cursor: pointer;
 }
 
-/* --- 10. Reviews Section --- */
 .r-bg {
     background: #fdfdfd;
 }
@@ -245,7 +236,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     font-size: 12px;
 }
 
-/* --- 11. Chefs Section --- */
 .chefs-bg {
     background: var(--dark);
 }
@@ -278,7 +268,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     color: var(--gold);
 }
 
-/* --- 12. Contact & Footer --- */
 .con-bg {
     background: #f8f9fa;
 }
@@ -320,7 +309,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     color: var(--gold);
 }
 
-/* --- Responsive --- */
 @media (max-width: 992px) {
     #about, .chefs-bg .g-0 {
         flex-direction: column;
