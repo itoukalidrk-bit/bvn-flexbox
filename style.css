@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
+.g-one {
+    width: 100%;
+    text-align: center;
+}
 :root {
     --gold: #c59d5f;
     --dark: #111111;
@@ -182,7 +186,6 @@ h1, h2, h3, h4, h5, .h1, .h2 {
     filter: brightness(70%);
 }
 
-/* --- 9. Blog Section --- */
 .bn-image {
     background: #111;
     color: #fff;
